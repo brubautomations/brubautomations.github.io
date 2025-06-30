@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #0e0e0f;
-      color: #ffffff;
+      background-color: #111;
+      color: #fff;
     }
     header {
       background-color: #1a1a1a;
@@ -20,86 +20,70 @@
       border-bottom: 2px solid red;
     }
     header img {
-      height: 48px;
-      margin-right: 15px;
+      height: 40px;
+      margin-right: 20px;
     }
     header h1 {
       font-size: 1.5rem;
-      font-weight: 600;
-      margin: 0;
-      color: #fff;
-    }
-    .hero {
-      padding: 60px 30px 20px 30px;
-      text-align: left;
-    }
-    .hero h2 {
-      font-size: 1.75rem;
       font-weight: 700;
-      margin-bottom: 10px;
-      color: #fff;
+      margin: 0;
     }
-    .hero p {
+    .tagline {
+      margin: 30px;
+    }
+    .tagline h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .tagline p {
       font-size: 1rem;
       color: #ccc;
     }
     main {
       max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0 auto;
+      padding: 20px;
     }
     .bot-card {
-      background-color: #121212;
-      border: 1px solid #2a2a2a;
-      border-left: 4px solid red;
-      border-radius: 10px;
-      padding: 20px 25px;
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
       text-decoration: none;
       display: block;
       transition: all 0.2s ease;
     }
     .bot-card:hover {
-      background-color: #1a1a1a;
+      background-color: #2a2a2a;
       transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(255,0,0,0.1);
     }
     .bot-title {
       font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 6px;
       color: #fff;
+      margin-bottom: 5px;
     }
     .bot-desc {
-      color: #bbb;
       font-size: 0.95rem;
+      color: #aaa;
     }
     footer {
       text-align: center;
       font-size: 0.85rem;
       padding: 30px 10px;
-      color: #666;
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      header img {
-        margin-bottom: 10px;
-      }
+      color: #777;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://brubautomations.github.io/logo.png" alt="BRUB Logo" />
+    <img src="brublogo.png" alt="BRUB Logo">
     <h1>BRUB AUTOMATIONS</h1>
   </header>
 
-  <div class="hero">
+  <div class="tagline">
     <h2>Engineering Clean Automation for Everyone</h2>
     <p>Smart Systems. Fast Feeds. Clean Deployments.</p>
   </div>
@@ -129,6 +113,5 @@
   <footer>
     © BRUB Automations — All bots are independently built and maintained.
   </footer>
-
 </body>
 </html>
