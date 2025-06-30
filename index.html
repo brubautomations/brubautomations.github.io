@@ -1,51 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BRUB Automations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #0b0c0f;
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0f;
       color: #ffffff;
     }
     header {
+      background-color: #1a1a1a;
+      padding: 20px 30px;
       display: flex;
       align-items: center;
-      padding: 20px 40px;
-      background-color: #1b1c1f;
-      border-bottom: 2px solid #cc0000;
+      border-bottom: 2px solid red;
     }
     header img {
-      height: 50px;
-      margin-right: 20px;
+      height: 48px;
+      margin-right: 15px;
     }
     header h1 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
-      color: #ffffff;
       margin: 0;
+      color: #fff;
+    }
+    .hero {
+      padding: 60px 30px 20px 30px;
+      text-align: left;
+    }
+    .hero h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
     }
     main {
-      padding: 60px 40px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .tagline {
-      font-size: 20px;
-      color: #bbbbbb;
-      margin-top: 10px;
+    .bot-card {
+      background-color: #121212;
+      border: 1px solid #2a2a2a;
+      border-left: 4px solid red;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s ease;
+    }
+    .bot-card:hover {
+      background-color: #1a1a1a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(255,0,0,0.1);
+    }
+    .bot-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .bot-desc {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 30px 10px;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="brublogo.png" alt="BRUB Logo">
+    <img src="https://brubautomations.github.io/logo.png" alt="BRUB Logo" />
     <h1>BRUB AUTOMATIONS</h1>
   </header>
-  <main>
+
+  <div class="hero">
     <h2>Engineering Clean Automation for Everyone</h2>
-    <p class="tagline">Smart Systems. Fast Feeds. Clean Deployments.</p>
+    <p>Smart Systems. Fast Feeds. Clean Deployments.</p>
+  </div>
+
+  <main>
+    <a class="bot-card" href="https://www.facebook.com/boom.phl" target="_blank">
+      <div class="bot-title">BOOM.ph</div>
+      <div class="bot-desc">Business and market-moving news, delivered automatically.</div>
+    </a>
+
+    <a class="bot-card" href="https://www.facebook.com/redflagp" target="_blank">
+      <div class="bot-title">Red Flag</div>
+      <div class="bot-desc">Disaster alerts, class suspensions, and emergency updates across the Philippines.</div>
+    </a>
+
+    <a class="bot-card" href="https://www.facebook.com/altaobserver" target="_blank">
+      <div class="bot-title">Alta Observer</div>
+      <div class="bot-desc">Elite society updates, real estate, politics, and movements from the top of the pyramid.</div>
+    </a>
+
+    <a class="bot-card" href="https://www.facebook.com/idolintel" target="_blank">
+      <div class="bot-title">Idol Intel</div>
+      <div class="bot-desc">Asian entertainment news — from K-pop to C-drama, served by a smart auto-reporter.</div>
+    </a>
   </main>
+
+  <footer>
+    © BRUB Automations — All bots are independently built and maintained.
+  </footer>
+
 </body>
 </html>
