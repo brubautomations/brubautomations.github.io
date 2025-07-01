@@ -37,73 +37,24 @@
     }
 
     .hero-banner {
-      position: relative;
-      height: 300px;
-      background: radial-gradient(ellipse at center, rgba(255,60,60,0.1) 0%, transparent 80%), 
-                  linear-gradient(135deg, rgba(255,60,60,0.08) 25%, transparent 25%) repeat;
-      background-size: 40px 40px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-image: radial-gradient(circle at center, #1c1c1c 0%, #0d0d0d 100%);
+      padding: 100px 20px 60px;
       text-align: center;
-    }
-
-    .hero-banner::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,60,60,0.15), transparent 70%);
-      filter: blur(60px);
-      animation: pulseBlur 6s ease-in-out infinite;
-    }
-
-    @keyframes pulseBlur {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 0.6;
-      }
-      50% {
-        transform: scale(1.3);
-        opacity: 0.9;
-      }
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      color: #ff3c3c;
-      text-shadow: 0 0 8px rgba(255, 60, 60, 0.4);
+      background-repeat: repeat;
+      background-size: 60px 60px;
+      background-blend-mode: overlay;
+      background-color: #0d0d0d;
     }
 
     .hero-content h1 {
       font-size: 2rem;
-      font-weight: 700;
-      margin: 0 0 10px;
+      color: #ff3c3c;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px rgba(255, 60, 60, 0.6);
     }
 
     .hero-content p {
-      font-size: 1rem;
-      color: #ccc;
-    }
-
-    .tagline {
-      margin: 30px;
-    }
-
-    .tagline h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #ff3c3c;
-      text-shadow: 0 0 4px rgba(255, 60, 60, 0.5);
-    }
-
-    .tagline p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #ccc;
     }
 
@@ -141,27 +92,6 @@
       color: #aaa;
     }
 
-    .about {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-left: 4px solid #ff3c3c;
-      box-shadow: 0 0 20px rgba(255, 60, 60, 0.1);
-    }
-
-    .about h2 {
-      font-size: 1.5rem;
-      color: #ff3c3c;
-      margin-bottom: 10px;
-    }
-
-    .about p {
-      font-size: 1rem;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -178,15 +108,10 @@
 
   <section class="hero-banner">
     <div class="hero-content">
-      <h1>Clean Automation. Zero Noise.</h1>
-      <p>Military-grade precision for civilian systems.</p>
+      <h1>Engineering Clean Automation for Everyone</h1>
+      <p>Smart Systems. Fast Feeds. Clean Deployments.</p>
     </div>
   </section>
-
-  <div class="tagline">
-    <h2>Engineering Clean Automation for Everyone</h2>
-    <p>Smart Systems. Fast Feeds. Clean Deployments.</p>
-  </div>
 
   <main>
     <a class="bot-card" href="https://www.facebook.com/boom.phl" target="_blank">
@@ -209,18 +134,6 @@
       <div class="bot-desc">Asian entertainment news — from K-pop to C-drama, served by a smart auto-reporter.</div>
     </a>
   </main>
-
-  <section class="about">
-    <h2>About BRUB Automations</h2>
-    <p>
-      BRUB Automations is a forward-facing automation group specializing in real-time data distribution and event-based triggers. 
-      We engineer clean, independent bots that report news, alerts, and insights across domains — from disaster response to elite society monitoring.
-      <br><br>
-      Each system is custom-built, lightweight, and low-noise — designed to deliver speed and clarity with no unnecessary clutter.
-      <br><br>
-      Based in the Philippines, BRUB operates with military-grade standards and clean code practices, deploying smart solutions for modern problems.
-    </p>
-  </section>
 
   <footer>
     © BRUB Automations — All bots are independently built and maintained.
