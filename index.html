@@ -36,6 +36,60 @@
       letter-spacing: 1px;
     }
 
+    .hero-banner {
+      position: relative;
+      height: 300px;
+      background: radial-gradient(ellipse at center, rgba(255,60,60,0.1) 0%, transparent 80%), 
+                  linear-gradient(135deg, rgba(255,60,60,0.08) 25%, transparent 25%) repeat;
+      background-size: 40px 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,60,60,0.15), transparent 70%);
+      filter: blur(60px);
+      animation: pulseBlur 6s ease-in-out infinite;
+    }
+
+    @keyframes pulseBlur {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1.3);
+        opacity: 0.9;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: #ff3c3c;
+      text-shadow: 0 0 8px rgba(255, 60, 60, 0.4);
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
     .tagline {
       margin: 30px;
     }
@@ -51,28 +105,6 @@
     .tagline p {
       font-size: 1rem;
       color: #ccc;
-    }
-
-    .about-section {
-      background-color: #1a1a1a;
-      border-left: 4px solid red;
-      padding: 30px;
-      margin: 30px;
-      border-radius: 8px;
-    }
-
-    .about-section h2 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #fff;
-    }
-
-    .about-section p {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 15px;
-      line-height: 1.6;
     }
 
     main {
@@ -109,6 +141,27 @@
       color: #aaa;
     }
 
+    .about {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-left: 4px solid #ff3c3c;
+      box-shadow: 0 0 20px rgba(255, 60, 60, 0.1);
+    }
+
+    .about h2 {
+      font-size: 1.5rem;
+      color: #ff3c3c;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -123,25 +176,19 @@
     <h1>BRUB AUTOMATIONS</h1>
   </header>
 
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1>Clean Automation. Zero Noise.</h1>
+      <p>Military-grade precision for civilian systems.</p>
+    </div>
+  </section>
+
   <div class="tagline">
     <h2>Engineering Clean Automation for Everyone</h2>
     <p>Smart Systems. Fast Feeds. Clean Deployments.</p>
   </div>
 
   <main>
-    <section class="about-section">
-      <h2>About BRUB Automations</h2>
-      <p>
-        BRUB Automations is an independent automation initiative focused on building clean, fast, and mission-critical systems for modern needs. Our bots are engineered for clarity, precision, and real-time performance — from news delivery to disaster alerts.
-      </p>
-      <p>
-        Founded on the belief that automation should be powerful yet simple, we design every deployment to be lightweight, efficient, and brutally effective. No bloat. No noise. Just results.
-      </p>
-      <p>
-        Whether it's business intelligence, national alerting systems, or cultural monitoring — BRUB Automations operates with a single objective: to make information flow smarter and cleaner for everyone.
-      </p>
-    </section>
-
     <a class="bot-card" href="https://www.facebook.com/boom.phl" target="_blank">
       <div class="bot-title">BOOM.ph</div>
       <div class="bot-desc">Business and market-moving news, delivered automatically.</div>
@@ -162,6 +209,18 @@
       <div class="bot-desc">Asian entertainment news — from K-pop to C-drama, served by a smart auto-reporter.</div>
     </a>
   </main>
+
+  <section class="about">
+    <h2>About BRUB Automations</h2>
+    <p>
+      BRUB Automations is a forward-facing automation group specializing in real-time data distribution and event-based triggers. 
+      We engineer clean, independent bots that report news, alerts, and insights across domains — from disaster response to elite society monitoring.
+      <br><br>
+      Each system is custom-built, lightweight, and low-noise — designed to deliver speed and clarity with no unnecessary clutter.
+      <br><br>
+      Based in the Philippines, BRUB operates with military-grade standards and clean code practices, deploying smart solutions for modern problems.
+    </p>
+  </section>
 
   <footer>
     © BRUB Automations — All bots are independently built and maintained.
